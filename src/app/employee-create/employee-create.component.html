@@ -1,0 +1,49 @@
+<div class="container ">
+  <h3 style="text-align: center;">Create an employee with device</h3>
+  <hr><br />
+
+  <div class="row">
+    <div class="col-6">
+      <h3 class="mb-3 text-center">Create Employee</h3>
+
+      <div class="form-group">
+        <input type="text" [(ngModel)]="employeeDetails.name" class="form-control" placeholder="Name">
+      </div>
+
+      <div class="form-group">
+        <input type="text" [(ngModel)]="employeeDetails.email" class="form-control" placeholder="Email">
+      </div>
+    </div>
+
+    <div class="col-6">
+
+      <h3 class="mb-3 text-center">Create Device</h3>
+
+      <div class="form-group">
+        <input type="text" [(ngModel)]="employeeDetails.serialnumber" class="form-control" placeholder="Serial Number">
+      </div>
+
+      <div class="form-group">
+        <input type="text" [(ngModel)]="employeeDetails.description" class="form-control" placeholder="Desciption">
+      </div>
+
+      <div class="form-group">
+        <div class="form-group">
+          <label for="type">Choose type</label>
+          <select class="form-select form-select-md" id="type" [(ngModel)]="employeeDetails.type"  [(ngModel)]="device.type" name="type">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="3">4</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="col-6">
+      <div class="form-group">
+        <button class="btn btn-success btn-lg btn-block" (click)="addEmployee()">Create</button>
+      </div>
+    </div>

@@ -1,0 +1,31 @@
+<div *ngIf="currentDevice" class="edit-form">
+  <h4>Device</h4>
+  <form>
+    <div class="form-group">
+      <label for="serialnumber">Serial Number</label>
+      <input type="text" class="form-control" id="serialnumber" [(ngModel)]="currentDevice.serialnumber" name="serialnumber" />
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input type="text" class="form-control" id="description" [(ngModel)]="currentDevice.description" name="description" />
+    </div>
+    <div class="form-group">
+      <label for="type">Type</label>
+      <input type="type" class="form-control" id="type" [(ngModel)]="currentDevice.type" name="type" />
+    </div>
+  </form>
+
+
+
+  <button class="btn btn-danger mr-2" (click)="deleteDevice()"> Delete </button>
+
+  <button type="submit" class="btn btn-success" (click)="updateDevice()"> Update</button>
+  <p>{{ message }}</p>
+</div>
+
+<div *ngIf="!currentDevice"> <br />
+  <p>Cannot access this Tutorial...</p>
+</div>
+
+
+

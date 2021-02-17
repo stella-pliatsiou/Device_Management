@@ -1,0 +1,32 @@
+{
+  "employees": [
+    {
+      "name": "Stella",
+      "email": "stella@gmail.com",
+      "serialnumber": "12345",
+      "description": "laptop",
+      "type": "2",
+      "id": 1
+    },
+    {
+      "name": "John",
+      "email": "john@gmail.com",
+      "serialnumber": "098751",
+      "description": "monitor",
+      "type": "3",
+      "id": 2
+    },
+    {
+      "serialnumber": "894575",
+      "description": "ram",
+      "type": "3",
+      "id": 3
+    },
+    {
+      "serialnumber": "654806",
+      "description": "smartphone",
+      "type": "1",
+      "id": 4
+    }
+  ]
+}
